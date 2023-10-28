@@ -1,0 +1,334 @@
+@import url(index.css);
+/*
+@keyframes flicker {
+  to {
+    opacity: 0.6;
+  }
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Bruno Ace", sans-serif;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+h1::before,
+h1::after {
+  content: "ByteCrafters";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+h1::before {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  animation: flicker 1.5s infinite alternate;
+}
+
+h1::after {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  animation: flicker 1.5s infinite alternate-reverse;
+}
+
+h3 {
+  color: #00ffff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff;
+}
+
+h5 {
+  font-size: 16px;
+  margin: 0;
+  padding: 15px;
+}
+
+#titulo_acerca_de_nosotros {
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+p {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+body {
+  background-color: rgb(174, 174, 194);
+  font-size: 14px;
+}
+
+#logo_atom {
+  height: 20px;
+}
+
+.cabecera {
+  background-image: url(../image/barra-azul.jpg);
+  background-repeat: no-repeat;
+  background-color: rgb(7, 7, 49);
+  align-items: center;
+  height: 150px;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.barra_navegacion {
+  background-color: rgb(7, 7, 49);
+  font-size: 20px;
+  min-height: 20px;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.barra_navegacion a {
+  display: flex;
+  flex: 1 1;
+  flex-wrap: wrap;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones_barra {
+  color: white;
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex: 1 1;
+  border: 2px solid whitesmoke;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.botones_barra:hover {
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
+  transition: box-shadow 0.4s ease;
+  font-style: italic;
+  font-size: 110%;
+  -webkit-transition: box-shadow 0.4s ease;
+  -moz-transition: box-shadow 0.4s ease;
+  -ms-transition: box-shadow 0.4s ease;
+  -o-transition: box-shadow 0.4s ease;
+}
+
+.contenedor_cuerpo {
+  color: black;
+  display: flex;
+  flex: 1 1;
+}
+
+.seccion {
+  color: black;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.seccion::before {
+  content: "";
+  background-image: url("../image/global_512.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.lista {
+  margin-left: 30px;
+  list-style: none;
+  padding-left: 40px;
+}
+
+.lista li {
+  background-image: url(../image/atom_logo_icon_247538.ico);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 0 50%;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.lateral {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 230px;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: rgb(7, 7, 49);
+}
+
+.lista_lateral_enlaces li {
+  color: white;
+  margin-right: 25px;
+}
+
+.lista_lateral_enlaces a {
+  color: white;
+  margin-left: 25px;
+}
+
+footer {
+  color: #fff;
+  background-color: rgba(7, 7, 49);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  min-height: 160px;
+}
+
+#redes {
+  width: 300px;
+  height: 30px;
+  background-color: rgba(7, 7, 4);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h5 {
+    font-size: 90%;
+    margin: 0;
+    padding: auto;
+  }
+
+  body {
+    background-color: rgb(174, 174, 194);
+    font-size: 80%;
+  }
+
+  .botones_barra {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 85%;
+    background-color: transparent;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex: 1 1;
+    border: 2px solid whitesmoke;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .botones_barra:hover {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
+    transition: box-shadow 0.4s ease;
+    font-style: italic;
+    font-size: 87%;
+    -webkit-transition: box-shadow 0.4s ease;
+    -moz-transition: box-shadow 0.4s ease;
+    -ms-transition: box-shadow 0.4s ease;
+    -o-transition: box-shadow 0.4s ease;
+  }
+
+  .lista {
+    margin-left: 15px;
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  .lista li {
+    background-image: url(../image/atom_logo_icon_247538.ico);
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    background-position: 0 50%;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h5 {
+    font-size: 80%;
+    margin: 0;
+    padding: auto;
+  }
+
+  body {
+    background-color: rgb(174, 174, 194);
+    font-size: 70%;
+  }
+
+  .botones_barra {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 70%;
+    background-color: transparent;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex: 1 1;
+    border: 2px solid whitesmoke;
+
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .botones_barra:hover {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff;
+    transition: box-shadow 0.4s ease;
+    font-style: italic;
+    font-size: 73%;
+    -webkit-transition: box-shadow 0.4s ease;
+    -moz-transition: box-shadow 0.4s ease;
+    -ms-transition: box-shadow 0.4s ease;
+    -o-transition: box-shadow 0.4s ease;
+  }
+
+  .lista {
+    margin-left: 10px;
+    list-style: none;
+    padding-left: 15px;
+  }
+
+  .lista li {
+    background-image: url(../image/atom_logo_icon_247538.ico);
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    background-position: 0 50%;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+}
+*/

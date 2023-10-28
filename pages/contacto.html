@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte</title>
+    <link rel="shortcup icon" type="image/x icon" href="../image/global.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/contacto.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap5/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header class="cabecera">
+        <h1 id="titulo_principal">ByteCrafters</h1>
+        <h3 id="titulo_secundario">Soluciones Informáticas</h3>
+    </header>
+    <div class="contenedor_cuerpo">
+        <aside class="lateral">
+            <nav class="barra_navegacion">
+                <a href="../pages/acerca_de_nosotros.html">
+                    <button class="botones_barra">Acerca de nosotros</button>
+                </a>
+                <a href="../pages/alcance.html">
+                    <button class="botones_barra">Alcance</button>
+                </a>
+                <a href="../pages/productos.html">
+                    <button class="botones_barra">Productos</button>
+                </a>
+                <a href="../pages/servicios.html">
+                    <button class="botones_barra">Servicios</button>
+                </a>
+                <a href="../index.html">
+                    <button class="botones_barra">Inicio</button>
+                </a>
+            </nav>
+        </aside>
+        <section class="seccion">
+            <form action="https://formsubmit.co/98feaa0ab2e981f75bc4a197899b4c72" method="POST" id="formulario">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <dotlottie-player src="https://lottie.host/dd174f25-61ba-44aa-a063-21d12a0fc103/xxGMeTKdQZ.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                        autoplay></dotlottie-player>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Para:</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticEmail"
+                                value="soporte@bytecrafters.com">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Ingrese su Nombre y Apellido</label>
+                        <input id="nombre" type="text" name="name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Ingrese su correo electrónico</label>
+                        <input id="mail" type="mail" name="mail" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <input id="asunto" type="text" name="subject" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="textareaMensaje" class="form-label">Ingrese el mensaje</label>
+                        <textarea class="form-control" id="textareaMensaje" rows="3" type="text" name="comments"
+                            aria-hidden="true"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkNoSoyRobot">
+                            <label class="form-check-label" for="checkNoSoyRobot">
+                                No soy un robot.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkTermYPolPriv">
+                            <label class="form-check-label" for="checkTermYPolPriv">
+                                Acepto los <a href="./terminos_de_servicio.html">terminos de servicio</a> y <a
+                                    href="./politicas_de_privacidad.html">politicas de privacidad</a> .
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <footer class="pie_pagina">
+        <div>
+            <h5>ByteCrafters</h5>
+            <br>
+            <p>ByteCrafters es una empresa dedicada a brindar soluciones informaticas a todo aquel cliente que requiera
+                de profecionalismo y dedicación. <br> Nuestro cuerpo de ingenieros y tecnicos en Hardware y Software se
+                encuentran al servicio de nuestros clientes para brindarle la mejor atencion.</p>
+            <br><br>
+            <ul id="lista_footer">
+                <td><a href="./terminos_de_servicio.html">Terminos del Servicio</a></td>
+                <td><a href="./politicas_de_privacidad.html">Politicas de Privacidad</a></td>
+                <td><a href="./soporte.html">Soporte</a></td>
+                <td><a href="./contacto.html">Contáctenos</a></td>
+            </ul>
+            <!-- Importado de Bootstrap -->
+            <nav id="redes" class="text-center text-white">
+                <div class="container p-4 pb-0">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #3b5998"
+                            href="http://www.Facebook.com" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Google -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39"
+                            href="http://www.Google.com" role="button" target="_blank"><i class="fab fa-google"></i></a>
+
+                        <!-- Instagram -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac"
+                            href="https://www.instagram.com" role="button" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- Linkedin -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #0082ca"
+                            href="https://ar.linkedin.com" role="button" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn text-white btn-floating m-1" style="background-color: #333333"
+                            href="https://github.com" role="button" target="_blank"><i class="fab fa-github"></i></a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+            </nav>
+            <h5>Nuestra ubicación</h5>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3085.6565767463085!2d-68.84402196194283!3d-32.89036735382914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1698527207370!5m2!1ses!2sar"
+                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </footer>
+    </div>
+    </footer>
+    <script src="../bootstrap5/js/bootstrap.min.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+
+</html>

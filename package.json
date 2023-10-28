@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "nodemailer": "^6.9.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
